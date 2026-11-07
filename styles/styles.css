@@ -17,6 +17,8 @@
 
     nav a {
         color: #FEDD00;
+        padding: 10px;
+        display: block;
     }
 
     aside {
@@ -37,8 +39,9 @@
     main img {
         width: 150px;
         height: auto;
-        border: #009739;
-        box-shadow: #00277659;
+        border: 3px solid #009739;
+        padding: 5px;
+        box-shadow: 4px 4px 8px rgb(0 39 118 / 0.35);
     }
 
     p {
