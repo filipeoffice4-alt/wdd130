@@ -64,7 +64,12 @@ header img {
     margin: 16px;
 }
 
+header nav {
+    display: flex;
+}
+
 header ul {
+    flex: 1;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -136,6 +141,7 @@ header nav a:hover {
 main section {
     background-color: var(--accent2-color);
     border-radius: 8px;
+    margin: 16px 0;
 }
 
 main section h2 {
