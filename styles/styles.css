@@ -1,57 +1,89 @@
-    main {
-        max-width: 900px;
-    }
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
-    body {
-        background-color: #F4FAF1;
-    }
+body {
+    background-color: #F4FAF1;
+}
 
-    h1 {
-        color: #007A33;
-    }
+h1 {
+    border-bottom: 2px solid #37f580;
+}
 
-    nav {
-        background-color: #002776;
-        padding: 30px;
-    }
+h1 {
+    color: #009739;
+}
 
-    nav a {
-        color: #FEDD00;
-        padding: 10px;
-        display: block;
-    }
+h1 {
+    color: #009739;
+    border-bottom: 2px solid #37f580;
+}
 
-    aside {
-        width: 18rem;
-        margin: 1.5rem;
-        border: 2px solid #009739;
-        padding: 1.25rem;
-        background-color: #FEDD00;
-        color: #002776;
-        text-align: center;
-    }
+.grid {
+    display: grid;
+}
 
-    aside img {
-        width: 200px;
-        height: auto;
-    }
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-    main img {
-        width: 150px;
-        height: auto;
-        border: 3px solid #009739;
-        padding: 5px;
-        box-shadow: 4px 4px 8px rgb(0 39 118 / 0.35);
-    }
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FEDD00;
+    ;
+}
 
-    /* */
+aside {
+    width: 18rem;
+    margin: 1.5rem;
+    border: 2px solid #009739;
+    padding: 1.25rem;
+    background-color: #FEDD00;
+    color: #002776;
+    text-align: center;
+}
 
-    p {
-        padding: 0;
-    }
+aside {
+    grid-column: 1;
+    grid-row: 1;
+}
 
-    footer {
-        margin-top: 2rem;
-        border-top: 2px solid #009739;
-        text-align: center;
-    }
+main {
+    grid-column: 2;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 3px solid #009739;
+    padding: 5px;
+    box-shadow: 4px 4px 8px rgb(0 39 118 / 0.35);
+}
+
+/* */
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 2px solid #009739;
+    text-align: center;
+}
