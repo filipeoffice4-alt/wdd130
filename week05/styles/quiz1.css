@@ -1,0 +1,125 @@
+/* ===== Colors ===== */
+:root {
+    --bg: #170f2e;
+    --card: #221743;
+    --question: #2c1f55;
+    --field: #170f2e;
+    --purple: #7c3aed;
+    --purple-bright: #a78bfa;
+    --purple-dark: #4c1d95;
+    --border: #5b3fb0;
+    --text: #ede9fe;
+    --text-soft: #c4b5fd;
+}
+
+/* ===== Base ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* ===== Formulary ===== */
+main {
+    padding: 2rem 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--card);
+    border-radius: 12px;
+    border-top: 6px solid var(--purple);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Questions ===== */
+.question {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--question);
+    border-left: 4px solid var(--purple-bright);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+/* ===== Questions areas ===== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--text);
+    background-color: var(--field);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    color-scheme: dark;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--purple-bright);
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.35);
+}
+
+/* ===== Button ===== */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--purple-bright);
+}
+
+/* ===== foot ===== */
+footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+}
