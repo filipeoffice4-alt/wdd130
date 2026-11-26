@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    border: 4px solid rgb(4, 4, 4);
+    font-family: Arial;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+caption {
+    padding: 8px 10px;
+    font-weight: 400;
+}
+
+th,
+td {
+    border: 2px solid rgb(16, 14, 16);
+    padding: 4px 10px;
+    text-align: center;
+}
+
+thead th,
+tfoot tr {
+    background-color: rgb(152, 32, 152);
+    color: white;
+    font-size: 900;
+}
