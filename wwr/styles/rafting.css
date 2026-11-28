@@ -155,6 +155,7 @@ header nav a:hover {
     display: block;
     width: 100%;
     height: 300px;
+    border: 0;
 }
 
 .Request form {
@@ -162,7 +163,7 @@ header nav a:hover {
     flex-direction: column;
     gap: 8px;
     border-radius: 12px;
-    background-color: rgb(117, 181, 234);
+    background-color: var(--surface-color)
 }
 
 .Request form {
@@ -200,6 +201,26 @@ textarea:focus {
     outline-offset: 2px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+.Request fieldset div,
+.Request form > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Request fieldset {
+    border: none;
+}
+
+.Request legend {
+    font-weight: bold;
+}
+
 .Request button {
     padding: 0.7rem;
     font-size: 1rem;
@@ -213,14 +234,6 @@ textarea:focus {
 
 .Request button:hover {
     background-color: var(--secondary-dark-color);
-}
-
-/* ===== Parts===== */
-main section {
-    background-color: var(--accent2-color);
-    border-radius: 8px;
-    margin: 16px 0;
-    box-shadow: 0 4px 12px rgba(27, 42, 53, 0.15);
 }
 
 main section {

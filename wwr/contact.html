@@ -23,16 +23,17 @@
         </nav>
     </header>
     <main>
+        <h1>Exciting Expeditions</h1>
         <div class="contact-layout">
             <div class="lleft-side">
                 <section class="Information">
                     <h2>Contact Information</h2>
-                    <p>Phone: (número)</p>
-                    <p>Address: (endereço)</p>
+                    <p>Phone: +55 (41)98742-4736</p>
+                    <p>Address: Estr. Mun. Barreiro, Barra do Turvo - SP, 11955-000</p>
                 </section>
                 <section class="Map">
                     <h2> Find us</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1955.2745236236667!2d-48.49929995011918!3d-24.818173337805145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db4d189fc712af%3A0x65353526f17531e5!2sRafting!5e0!3m2!1sen!2sbr!4v1795825952822!5m2!1sen!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1955.2745236236667!2d-48.49929995011918!3d-24.818173337805145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94db4d189fc712af%3A0x65353526f17531e5!2sRafting!5e0!3m2!1sen!2sbr!4v1795825952822!5m2!1sen!2sbr" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </div>
             <section class="Request">
@@ -51,9 +52,27 @@
                         <option value="Reservation">Reservation Question</option>
                         <option value="Suggestion">Website Suggestion</option>
                     </select>
+                    <fieldset>
+                        <legend>How did you hear about us?</legend>
+                        <div>
+                            <input type="radio" id="heard-friend" name="heard-from" value="Friend">
+                            <label for="heard-friend">A friend</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="heard-social" name="heard-from" value="Social media">
+                            <label for="heard-social">Social media</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="heard-search" name="heard-from" value="Online search">
+                            <label for="heard-search">Online search</label>
+                        </div>
+                    </fieldset>
                     <label for="Text-Message">Message</label>
                     <textarea name="Text-Message" id="Text-Message" rows="4"></textarea>
-
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Send me news and trip offers</label>
+                    </div>
                     <button type="submit">Send</button>
                 </form>
             </section>
